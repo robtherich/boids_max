@@ -1,6 +1,6 @@
 /*
 
-	boids3d 08/2005 a.sier / jasch adapted from boids by eric singer © 1995-2003 eric l. singer
+	boids3d 08/2005 a.sier / jasch adapted from boids by eric singer 1995-2003 eric l. singer
 	free for non-commercial use
 */
 
@@ -9,6 +9,10 @@
 #include	<stdlib.h>
 #include	<math.h>
 #include	<time.h>
+
+#define CLIP(x,a,b) (x)=(x)<(a)?(a):(x)>(b)?(b):(x)
+#define SETLONG atom_setlong
+#define SETFLOAT atom_setfloat
 
 // a macro to mark exported symbols in the code without requiring an external file to define them
 #ifdef WIN_VERSION
@@ -187,8 +191,7 @@ int T_EXPORT main()
 	addmess((method) Flock_reset, 			"init", 		0);
 	addmess((method) Flock_dump, 			"dump", 		0);
 	srand((unsigned)time(NULL));
-	
-	post("boids3d 2005 a.sier / jasch   © 1995-2003 eric l. singer   "__DATE__" "__TIME__);	
+		
 	ps_nothing = gensym("");
 }
 
