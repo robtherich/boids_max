@@ -9,6 +9,7 @@
 #include	<stdlib.h>
 #include	<math.h>
 #include	<time.h>
+#include    <stdio.h>
 
 #define CLIP(x,a,b) (x)=(x)<(a)?(a):(x)>(b)?(b):(x)
 #define SETLONG atom_setlong

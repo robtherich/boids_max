@@ -3,6 +3,7 @@
 */
 
 #include "jit.common.h"
+#include    <stdio.h>
 
 typedef struct _xray_jit_boidsrender 
 {
