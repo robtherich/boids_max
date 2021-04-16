@@ -13,6 +13,8 @@
 #define CLIP(x,a,b) (x)=(x)<(a)?(a):(x)>(b)?(b):(x)
 #define SETLONG atom_setlong
 #define SETFLOAT atom_setfloat
+#define Boolean t_bool
+#define Ptr char*
 
 // a macro to mark exported symbols in the code without requiring an external file to define them
 #ifdef WIN_VERSION
