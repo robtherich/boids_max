@@ -1,5 +1,6 @@
 # custom
 *.mxe
+*.mxe64
 *.mxo/
 
 # Visual Studio
