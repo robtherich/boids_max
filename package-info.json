@@ -1,0 +1,21 @@
+{
+	"name" : "boids_max",
+	"version" : "1.0.0",
+	"description" : "BOIDS package for Max with support for Jitter Matrices",
+	"max_version_min" : "7.0.0",
+	"max_version_max" : "none",
+	"os" : 	{
+		"macintosh" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+,
+		"windows" : 		{
+			"min_version" : "none",
+			"platform" : [ "x64" ]
+		}
+
+	}
+,
+	"homepatcher" : "boids overview.maxpat"
+}
