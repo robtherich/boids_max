@@ -16,6 +16,9 @@
 #define SETFLOAT atom_setfloat
 #define Boolean t_bool
 #define Ptr char*
+#define Object t_object
+#define Symbol t_symbol
+#define Atom t_atom
 
 // a macro to mark exported symbols in the code without requiring an external file to define them
 #ifdef WIN_VERSION
