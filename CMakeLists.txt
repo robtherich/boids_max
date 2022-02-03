@@ -1,12 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
 
-# Fetch the correct verion of the max-api
-message(STATUS "Updating Git Submodules")
-execute_process(
-	COMMAND				git submodule update --init --recursive
-	WORKING_DIRECTORY	"${CMAKE_CURRENT_SOURCE_DIR}"
-)
-
 # Misc setup and subroutines
 # include(${CMAKE_CURRENT_SOURCE_DIR}/source/max-api/script/max-package.cmake)
 
